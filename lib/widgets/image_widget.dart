@@ -78,7 +78,7 @@ class ImageTile extends StatelessWidget {
                         offset: const Offset(0, 3),
                       ),
                     ],
-                    shape: BoxShape.circle,
+                    shape: BoxShape.rectangle,
                   ),
                   child: Column(
                     children: [
@@ -145,7 +145,7 @@ class ImageTile extends StatelessWidget {
                     shape: BoxShape.circle,
                   ),
                   child: CircleAvatar(
-                    radius: 26,
+                    radius: 30,
                     backgroundImage: NetworkImage(profilePic),
                   ),
                 ),
@@ -154,12 +154,12 @@ class ImageTile extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.75),
-                        blurRadius: 35.0,
+                        color: Colors.black.withOpacity(1),
+                        blurRadius: 55.0,
                         offset: const Offset(0, 2),
                       ),
                     ],
-                    shape: BoxShape.circle,
+                    shape: BoxShape.rectangle,
                   ),
                   child: Column(
                     children: [
@@ -185,25 +185,6 @@ class ImageTile extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  width: 165,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.4),
-                        blurRadius: 10.0,
-                        offset: const Offset(0, 2),
-                      ),
-                    ],
-                    shape: BoxShape.circle,
-                  ),
-                  child: Icon(
-                    Icons.menu_sharp,
-                    color: Colors.grey[200],
-                  ),
-                )
               ],
             ),
           ),
